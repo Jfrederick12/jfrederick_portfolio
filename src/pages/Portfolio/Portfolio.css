@@ -1,0 +1,14 @@
+.work-container {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  padding: 5px;
+  color: white;
+  text-align: center;
+}
