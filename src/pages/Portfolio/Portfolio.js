@@ -11,11 +11,24 @@ const ShowCard = (props) => (
     </li>
 )
 
+const { string } = React.PropTypes
+
+ShowCard.propTypes = {
+  img: string.isRequired,
+  name: string.isRequired
+}
+
+//----------------- ImageList Component ----------------
+
 const ImageList = React.createClass ({
   getInitialState () {
     return {
       selectedWork: []
     }
+  },
+
+  viewMore(i,j){
+    console.log('You clicked: ', i  );
   },
 
   onHoverOver(event) {
@@ -40,7 +53,7 @@ const ImageList = React.createClass ({
     return (
       <ul className="work-container" >
         {works.map((work) => (
-          <ShowCard {...work} key={work.id} />
+          <li onClick={this.viewMore.bind(this, work.id)}><ShowCard {...work} key={work.id} /></li>
         ))}
       </ul>
     );
@@ -48,12 +61,6 @@ const ImageList = React.createClass ({
 });
 
 
-const { string } = React.PropTypes
-
-ShowCard.propTypes = {
-  img: string.isRequired,
-  name: string.isRequired
-}
 
 const works = [
       { id: 1,
