@@ -5,10 +5,7 @@ import './Portfolio.css';
 // --------------------- SHOW CARD -------------------------
 
 const ShowCard = (props) => (
-    <li className="flex-item">
-      <img src={props.img} height="225px" width="300px" />
-      <p>{props.name}</p>
-    </li>
+  <img src={props.img} alt={props.name} height="225px" width="300px" />
 )
 
 const { string } = React.PropTypes
@@ -20,26 +17,44 @@ ShowCard.propTypes = {
 
 //----------------- ImageList Component ----------------
 
-const ImageList = React.createClass ({
-  getInitialState () {
-    return {
-      selectedWork: []
-    }
-  },
+class ImageList extends React.Component {
+  constructor(props) {
+    super(props);
+    this.selectedWork = {id: null}
+    this.state = {}
+  }
+  // getInitialState () {
+  //   return {
+  //     selectedWork: {}
+  //   }
+  // },
 
-  viewMore(i,j){
-    console.log('You clicked: ', i  );
-  },
+  viewMore(id, name){
+    // console.log('You clicked: ', id, name );
+    // const selectedWork = { id: id, name: name}
+    this.selectedWork = {id: id, name: name}
+    // this.state = {id: id + 1 , name: name}
+    console.log(this.selectedWork)
+    return(
+      <h1>{this.selectedWork}</h1>
+    )
+  }
+
+  doStuff() {
+    this.selectedWork = 'roar'
+  }
+
+  // onWorkClick() {
+  //   console.log()
+  // }
 
   onHoverOver(event) {
-    this.setState({ selectedWork: event.currentTarget })
     event.currentTarget.style.opacity="0.5";
-    console.log(event.currentTarget)
-  },
+  }
 
   onHoverOut(event) {
     event.currentTarget.style.opacity="1";
-  },
+  }
 
   render() {
 
@@ -53,12 +68,15 @@ const ImageList = React.createClass ({
     return (
       <ul className="work-container" >
         {works.map((work) => (
-          <li onClick={this.viewMore.bind(this, work.id)}><ShowCard {...work} key={work.id} /></li>
+          <li className="flex-item" onMouseOver={this.onHoverOver} onMouseOut={this.onHoverOut} key={work.id} onClick={this.viewMore.bind(this, work.id, work.name)}>
+            <p onClick={this.doStuff}>{work.id}</p>
+            <ShowCard {...work} />
+          </li>
         ))}
       </ul>
     );
   }
-});
+};
 
 
 
