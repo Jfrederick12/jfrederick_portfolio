@@ -58,11 +58,11 @@ class ImageList extends React.Component {
   render() {
 
     return (
-      <ul className="work-container" >
+      <div className="gallery" >
         {works.map((work) => (
-          <li className="flex-item" onMouseOver={this.onHoverOver} onMouseOut={this.onHoverOut} key={work.id} onClick={this.selectWork.bind(this, work.id, work.name, work.img, work.description )}>
+          <div onMouseOver={this.onHoverOver} onMouseOut={this.onHoverOut} key={work.id} onClick={this.selectWork.bind(this, work.id, work.name, work.img, work.description )}>
             <ShowCard {...work} />
-          </li>
+          </div>
         ))}
 
         {/* need to move Modal into it's own component and pass state through as props */}
@@ -81,7 +81,7 @@ class ImageList extends React.Component {
           </Modal.Footer>
         </Modal>
 
-      </ul>
+      </div>
     );
   }
 };
