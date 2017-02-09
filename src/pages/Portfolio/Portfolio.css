@@ -16,3 +16,7 @@
 p {
   color: black;
 }
+
+.work-modal {
+  display: inline-block;
+}
