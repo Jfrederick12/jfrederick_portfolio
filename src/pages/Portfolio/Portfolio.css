@@ -22,7 +22,7 @@ p {
   display: inline-block;
 }
 
-.gallery {
+/*.gallery {
   cursor: pointer;
   padding: .5vw;
   font-size: 0;
@@ -40,8 +40,8 @@ p {
   flex: auto;
   width: 200px;
   margin: .5vw;
-}
-.gallery div img {
+}*/
+/*.gallery div img {
   width: 100%;
   height: auto;
 }
@@ -49,6 +49,95 @@ p {
 @media screen and (max-width: 400px) {
   .gallery div { margin: 0; }
   .gallery { padding: 0; }
+}*/
 
+.text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  visibility: hidden;
+  vertical-align: middle;
 }
 
+.hover01:hover .text {
+  visibility:visible;
+}
+
+.hover01 figure img {
+  display: inline-block;
+  position: relative;
+  -webkit-transform: scale(1);
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.hover01 figure:hover img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+
+.column {
+  margin: 15px 15px 0;
+  padding: 0;
+}
+
+.column:last-child {
+  padding-bottom: 60px;
+}
+
+.column::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.column div {
+  position: relative;
+  float: left;
+  width: 300px;
+  height: 200px;
+  margin: 0 0 0 0px;
+  padding: 0;
+}
+
+.column div:first-child {
+  margin-left: 0;
+}
+
+.column div span {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  color: #444;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  opacity: 0;
+}
+
+figure {
+  cursor: pointer;
+  width: 300px;
+  height: 200px;
+  margin: 0;
+  padding: 0px;
+  background: #fff;
+  overflow: hidden;
+}
+
+figure:hover+span {
+  bottom: -36px;
+  opacity: 1;
+}

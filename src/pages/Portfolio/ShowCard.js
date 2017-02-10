@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 
 const ShowCard = (props) => (
-  <img src={props.img} alt={props.name} height="225px" width="300px" />
+  <figure>
+    <img src={props.img} alt={props.name} height="225px" width="300px" />
+    <h1 className="">this</h1>
+  </figure>
 )
 
 const { string } = React.PropTypes

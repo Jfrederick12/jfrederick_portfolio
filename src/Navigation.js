@@ -5,12 +5,8 @@ import { MenuItem, Navbar, Nav, NavItem} from 'react-bootstrap';
 class Navigation extends Component {
  render() {
    return (
-    <div className="nav-bar">
       <Navbar className="navigation-style shadow" fixedTop>
         <Navbar.Header>
-          <Navbar.Brand>
-            <a href="#">Jfrederick</a>
-          </Navbar.Brand>
         </Navbar.Header>
         <nav className="custom-nav">
           <Link to="/home">Home</Link>
@@ -18,7 +14,6 @@ class Navigation extends Component {
           <Link to="/portfolio">Portfolio</Link>
         </nav>
       </Navbar>
-    </div>
    );
  }
 }

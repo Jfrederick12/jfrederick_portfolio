@@ -58,10 +58,11 @@ class ImageList extends React.Component {
   render() {
 
     return (
-      <div className="gallery" >
+      <div className="column" >
         {works.map((work) => (
-          <div onMouseOver={this.onHoverOver} onMouseOut={this.onHoverOut} key={work.id} onClick={this.selectWork.bind(this, work.id, work.name, work.img, work.description )}>
+          <div className="hover01"  key={work.id} onClick={this.selectWork.bind(this, work.id, work.name, work.img, work.description )}>
             <ShowCard {...work} />
+            <span className="text">{work.name}</span>
           </div>
         ))}
 
