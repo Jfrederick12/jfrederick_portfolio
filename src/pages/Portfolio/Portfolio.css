@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand|Montserrat');
 
+.portfolio {
+  height: 100vh;
+}
+
 .work-container {
   display: flex;
   padding: 0;

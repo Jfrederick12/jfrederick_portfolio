@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SkillList from './SkillList';
+import { Grid, Row, Col } from 'react-bootstrap';
 import './Skills.css'
 
 const homeInfo = {
@@ -10,16 +11,32 @@ const homeInfo = {
 class Home extends Component {
  render() {
     return (
-      <div className="parent">
-        <div className="left">
-          < SkillList />
-        </div>
-        <div className="right">
-        </div>
-      </div>
+      <Grid fluid className="no-gutters-right">
+        <Row className="parent">
+          <Col className="skill-type" sm={10} md={6}>more stuff</Col>
+          <Col fluid className="skill-tray" sm={10} md={10}>< SkillList />
+          </Col>
+        </Row>
+      </Grid>
     );
  }
 }
+      // <div className="parent">
+      //   <div className="left">
+      //   </div>
+      //   <div className="right">
+      //     < SkillList />
+      //     <p>stuff</p>
+      //     <p>stuff</p>
+      //     <p>stuff</p>
+      //     <p>stuff</p>
+      //     <p>stuff</p>
+      //     <p>stuff</p>
+      //     <p>stuff</p>
+      //     <p>stuff</p>
+      //   </div>
+      // </div>
+
 export default Home;
 
 // <Col xs={12} md={8} />
