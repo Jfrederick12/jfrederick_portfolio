@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import SkillList from './SkillList';
+import './Skills.css'
 
 const homeInfo = {
   info: 'this is stuff here',
@@ -9,9 +11,10 @@ class Home extends Component {
  render() {
     return (
       <div className="parent">
-        <div className="left">{homeInfo.info}</div>
+        <div className="left">
+          < SkillList />
+        </div>
         <div className="right">
-          <img src={homeInfo.imageUrl} width="50%"/>
         </div>
       </div>
     );

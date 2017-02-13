@@ -1,0 +1,111 @@
+li {
+  padding-top: 30px;
+  list-style-type: none;
+}
+
+#Skill-100 {
+   width: 90%;
+   animation: Animate-HTML 4s;
+   -webkit-animation: Animate-HTML 4s;
+   -moz-animation: Animate-HTML 4s;
+   -o-animation: Animate-HTML 4s;
+   height: 35px;
+   position: absolute;
+   background-color: #F9690E;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+ }
+
+  #Skill-75 {
+   width: 65%;
+   animation: Animate-HTML 4s;
+   -webkit-animation: Animate-HTML 4s;
+   -moz-animation: Animate-HTML 4s;
+   -o-animation: Animate-HTML 4s;
+   height: 35px;
+   position: absolute;
+   background-color: #F9690E;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+ }
+
+#Skill-50 {
+   width: 45%;
+   animation: Animate-HTML 4s;
+   -webkit-animation: Animate-HTML 4s;
+   -moz-animation: Animate-HTML 4s;
+   -o-animation: Animate-HTML 4s;
+   height: 35px;
+   position: absolute;
+   background-color: #F9690E;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+}
+
+#Skill-25 {
+   width: 30%;
+   animation: Animate-HTML 4s;
+   -webkit-animation: Animate-HTML 4s;
+   -moz-animation: Animate-HTML 4s;
+   -o-animation: Animate-HTML 4s;
+   height: 35px;
+   position: absolute;
+   background-color: #F9690E;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+}
+
+ @keyframes Animate-HTML {
+   0% {width: 0px;}
+   0% {width: 0%}
+   }
+
+/*@keyframes Animate-HTML2 {
+   0% {width: 0px;}
+   50% {width: 50%}
+   }*/
+/*   @-webkit-keyframes Animate-HTML {
+   from {width: 10px;}
+   to {width: 100%}
+   }
+   @-moz-keyframes Animate-HTML {
+   from {width: 10px;}
+   to {width: 100%}
+   }
+   @-o-keyframes Animate-HTML {
+   from {width: 10px;}
+   to {width: 100%}*/
+
+
+ @media only screen and (max-width: 40em) {
+ .responsive-percent {
+ margin-right: -45px !important;
+ }
+ }
+ @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+ .responsive-percent {
+ margin-right: -45px !important;
+ }
+ }
+
+.parent {
+  width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.left {
+  height: 250px;
+  width: 70%;
+  background-color: #e9ece5;
+}
+
+.right {
+  width: 30%;
+  height: 250px;
+  background-color: #b3c2bf;
+}
