@@ -6,8 +6,7 @@ const SkillBar = (props) => (
     <ul>
       <li>
         <div id={props.proficiency}>
-          <span className="Skill-Area">{props.name}</span>
-          <span className="PercentText fadeIn fadeIn-3s fadeIn-Delay-3sfadeIn fadeIn-3s fadeIn-Delay-3s"></span>
+          <p className="skill-area">{props.name}</p>
         </div>
       </li>
     </ul>

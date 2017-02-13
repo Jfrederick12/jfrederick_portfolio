@@ -1,25 +1,7 @@
 import React, { Component } from 'react';
 import SkillBar from './SkillBar';
 import './Skills.css';
-
-const skills = [
-  {
-    name: 'HTML',
-    proficiency: 'Skill-100'
-  },
-  {
-    name: 'CSS',
-    proficiency: 'Skill-75'
-  },
-  {
-    name: 'JavaScript',
-    proficiency: 'Skill-100'
-  },
-  {
-    name: 'Ruby',
-    proficiency: 'Skill-100'
-  }
-]
+import skills from './Skills';
 
 class SkillsList extends React.Component {
   constructor(props) {
@@ -29,6 +11,7 @@ class SkillsList extends React.Component {
   render() {
     return (
     <div>
+      <h4>Qualifications</h4>
       {skills.map((skill) => (
         <div>
           <SkillBar {...skill} />
