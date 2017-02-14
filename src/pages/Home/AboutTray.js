@@ -4,12 +4,12 @@ import './Skills.css';
 
 const containerStyle = {
   backgroundColor: '#fae596',
-  height: '100%'
+  height: 800
 }
 
 const AboutTray = () => (
   <StickyContainer style={containerStyle}>
-    <Sticky topOffset={-40} stickyStyle={{ marginTop: 40 }}>
+    <Sticky bottomOffset={1} topOffset={-40} stickyStyle={{ marginTop: 40 }}>
     <div className="about-tray-container">
       <span id="image-header"><img src="https://github.com/Jfrederick12/React_Web_Portfolio/blob/portfolio-overhaul/public/images/about.png?raw=true" width="60%"/></span>
       <h4>Web Developer, Graphic Designer and Chicago transplant living in Austin, TX</h4>

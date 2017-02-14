@@ -22,6 +22,10 @@ p {
   display: inline-block;
 }
 
+.row-container {
+  background-color: #fae596;
+}
+
 /*.gallery {
   cursor: pointer;
   padding: .5vw;
@@ -62,6 +66,12 @@ p {
 .column div:hover .text {
   visibility:visible;
 }*/
+
+.work-tray-container {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  color: white;
+}
 
 
 .column {
