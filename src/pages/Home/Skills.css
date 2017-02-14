@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Montserrat');
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.no-gutters-right {
+  margin-right: -30px;
+}
+
+.parent {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.skill-tray {
+  height: 1200px;
+  background-color: #e9ece5;
+  width: 100%;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+.skill-type {
+  width: 100%;
+  height: 100vh;
+  background-color: #c0dfd9;
+}
+
+.about-container {
+  padding: 40px;
+}
+
+.about-container span {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.about-container h4 {
+  line-height: 140%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*.left {
+  height: 100vh;
+  max-height: 600px;
+  width: 45%;
+  background-color: #3b3a36;
+}
+
+.right {
+  overflow-y: scroll;
+  width: 100%;
+  height:1200px;
+  max-height:300px;
+}*/
+
+li {
+  margin-top: 10px;
+  margin-left: -40px;
+  list-style-type: none;
+}
+
+
+#Skill-100 {
+   width: 100%;
+   animation: Animate-HTML 4s;
+   -webkit-animation: Animate-HTML 4s;
+   -moz-animation: Animate-HTML 4s;
+   -o-animation: Animate-HTML 4s;
+   height: 30px;
+   position: relative;
+   background-color: #c0dfd9;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+}
+
+  #Skill-90 {
+   width: 90%;
+   animation: Animate-HTML 4s;
+   -webkit-animation: Animate-HTML 4s;
+   -moz-animation: Animate-HTML 4s;
+   -o-animation: Animate-HTML 4s;
+   height: 30px;
+   position: relative;
+   background-color: #c0dfd9;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+}
+
+  #Skill-80 {
+   width: 80%;
+   animation: Animate-HTML 4s;
+   -webkit-animation: Animate-HTML 4s;
+   -moz-animation: Animate-HTML 4s;
+   -o-animation: Animate-HTML 4s;
+   height: 30px;
+   position: relative;
+   background-color: #c0dfd9;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+ }
+
+#Skill-70 {
+   width: 70%;
+   animation: Animate-HTML 4s;
+   -webkit-animation: Animate-HTML 4s;
+   -moz-animation: Animate-HTML 4s;
+   -o-animation: Animate-HTML 4s;
+   height: 30px;
+   position: relative;
+   background-color: #c0dfd9;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+}
+
+#Skill-60 {
+   width: 60%;
+   animation: Animate-HTML 4s;
+   -webkit-animation: Animate-HTML 4s;
+   -moz-animation: Animate-HTML 4s;
+   -o-animation: Animate-HTML 4s;
+   height: 30px;
+   position: relative;
+   background-color: #c0dfd9;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+}
+
+#Skill-50 {
+   width: 50%;
+   animation: Animate-HTML 4s;
+   -webkit-animation: Animate-HTML 4s;
+   -moz-animation: Animate-HTML 4s;
+   -o-animation: Animate-HTML 4s;
+   height: 30px;
+   position: relative;
+   background-color: #c0dfd9;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+}
+
+.skill-area {
+  font-family: 'Quicksand', sans-serif;
+  padding-left: 10px;
+  padding-top: 5px;
+  width: 300px;
+}
+
+ @keyframes Animate-HTML {
+   0% {width: 0px;}
+   0% {width: 0%}
+   }
+
+@keyframes Animate-HTML2 {
+   0% {width: 0px;}
+   0% {width: 0%}
+   }
+@-webkit-keyframes Animate-HTML {
+   0% {width: 0px;}
+   0% {width: 0%}
+}
+
+@-moz-keyframes Animate-HTML {
+  0% {width: 0px;}
+  0% {width: 0%}
+}
+
+@-o-keyframes Animate-HTML {
+  0% {width: 0px;}
+  0% {width: 0%}
+}
+
+@media only screen and (max-width: 40em) {
+  .responsive-percent {
+  margin-right: -45px !important;
+  }
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .responsive-percent {
+  margin-right: -45px !important;
+  }
+}
+

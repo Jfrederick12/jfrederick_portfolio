@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand|Montserrat');
 
+.portfolio {
+  height: 100vh;
+  width: auto;
+}
+
 .work-container {
   display: flex;
   padding: 0;
@@ -7,13 +12,6 @@
   list-style: none;
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
-}
-
-.flex-item {
-  cursor: pointer;
-  padding: 5px;
-  color: white;
-  text-align: center;
 }
 
 p {
@@ -67,6 +65,7 @@ p {
 
 
 .column {
+  height: 100vh;
   margin: 15px 15px 0;
   padding: 0;
 }
