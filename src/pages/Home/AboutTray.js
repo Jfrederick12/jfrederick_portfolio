@@ -4,7 +4,6 @@ import './Skills.css';
 const AboutTray = () => (
   <div>
     <h1>ABOUT</h1>
-    <a href="#thing">Here</a>
   </div>
 )
 
