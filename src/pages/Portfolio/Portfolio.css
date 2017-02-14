@@ -65,6 +65,8 @@ p {
 
 
 .column {
+  max-width: 600px;
+  min-width: 600px;
   height: 100vh;
   margin: 15px 15px 0;
   padding: 0;
@@ -75,7 +77,6 @@ p {
 }
 
 .column::after {
-  content: '';
   clear: both;
   display: block;
 }
