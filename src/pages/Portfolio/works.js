@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 
 const works = [
+      { id: 12,
+        name: "Seatd Mobile App",
+        img: "https://github.com/Jfrederick12/React_Web_Portfolio/blob/master/public/images/seatd.jpg?raw=true",
+        thumbnail: "https://github.com/Jfrederick12/React_Web_Portfolio/blob/master/public/images/seatd.jpg?raw=true",
+        description: ""
+      },
       { id: 1,
         name: "Moonphase Ranch",
         img: "https://d13yacurqjgara.cloudfront.net/users/1110044/screenshots/2648085/moonphase.jpg",
@@ -66,13 +72,7 @@ const works = [
         img: "https://github.com/Jfrederick12/React_Web_Portfolio/blob/master/public/images/logan_square.jpg?raw=true",
         thumbnail: "https://github.com/Jfrederick12/React_Web_Portfolio/blob/master/public/thumbnails/logan_thumb.jpg?raw=true",
         description: ""
-      },
-      { id: 12,
-        name: "Seatd Mobile App",
-        img: "https://github.com/Jfrederick12/React_Web_Portfolio/blob/master/public/images/seatd.jpg?raw=true",
-        thumbnail: "https://github.com/Jfrederick12/React_Web_Portfolio/blob/master/public/images/seatd.jpg?raw=true",
-        description: ""
-      },
+      }
     ]
 
 export default works;

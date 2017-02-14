@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import Banner from './components/Banner';
 import Home from './pages/Home/Home';
 import Navigation from './Navigation';

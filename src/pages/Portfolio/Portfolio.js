@@ -9,11 +9,11 @@ class Portfolio extends Component {
     return (
     <div>
       <Grid fluid className="no-gutters-right">
-        <Row className="row-container">
-            <Col className="skill-type" sm={6} md={6}>
+        <Row className="portfolio-row-container">
+            <Col className="work-tray" sm={6} md={6}>
               < WorkTray />
             </Col>
-          <Col className="skill-tray" sm={6} md={6}>
+          <Col className="image-tray" sm={6} md={6}>
             <ImageList />
           </Col>
         </Row>

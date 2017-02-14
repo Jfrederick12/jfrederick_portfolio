@@ -44,7 +44,7 @@ class ImageList extends React.Component {
 
   render() {
     return (
-      <div className="column" >
+      <div className="gallery" >
         {works.map((work) => (
           <div key={work.id} onClick={this.selectWork.bind(this, work.id, work.name, work.img, work.description )}>
             <ShowCard {...work} />
