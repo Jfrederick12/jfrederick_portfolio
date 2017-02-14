@@ -12,29 +12,25 @@ import './Skills.css'
 // </Sticky>
 
 const containerStyle = {
-  backgroundColor: '#c0dfd9',
-  height: '100vh'
+  backgroundColor: '#dddfd4',
+  height: '910px'
 }
 
 class Home extends Component {
  render() {
     return (
-
+    <div>
       <Grid fluid className="no-gutters-right">
-        <Row>
-          <StickyContainer style={containerStyle}>
-            <Sticky topOffset={-40} stickyStyle={{ marginTop: 40 }}>
+        <Row className="row-container">
             <Col className="skill-type" sm={6} md={6}>
               < AboutTray />
             </Col>
-            </Sticky>
-          </StickyContainer>
           <Col className="skill-tray" sm={6} md={6}>
             <AboutDetails />
           </Col>
         </Row>
       </Grid>
-
+    </div>
     );
  }
 }
