@@ -11,34 +11,33 @@ import './Skills.css'
 //     <YourComponent/>
 // </Sticky>
 
-const homeInfo = {
-  info: 'this is stuff here',
-  imageUrl: 'https://cdn0.iconfinder.com/data/icons/simple-outlines-1/100/Globe-512.png'
+const containerStyle = {
+  backgroundColor: '#c0dfd9',
+  height: '100vh'
 }
 
 class Home extends Component {
  render() {
     return (
-      <div>
-        <StickyContainer style={{zIndex: 2}}>
-          <Sticky>
-          <Grid fluid className="no-gutters-right">
-            <Row className="parent">
-              <Col className="skill-type" sm={10} md={6}>
-                < AboutTray />
-              </Col>
-              <Col className="skill-tray" sm={10} md={6}>< AboutDetails />
-              </Col>
-            </Row>
-          </Grid>
-          </Sticky>
-        </StickyContainer >
-      </div>
+
+      <Grid fluid className="no-gutters-right">
+        <Row>
+          <StickyContainer style={containerStyle}>
+            <Sticky topOffset={-40} stickyStyle={{ marginTop: 40 }}>
+            <Col className="skill-type" sm={6} md={6}>
+              < AboutTray />
+            </Col>
+            </Sticky>
+          </StickyContainer>
+          <Col className="skill-tray" sm={6} md={6}>
+            <AboutDetails />
+          </Col>
+        </Row>
+      </Grid>
+
     );
  }
 }
 
 
 export default Home;
-
-// <Col xs={12} md={8} />
