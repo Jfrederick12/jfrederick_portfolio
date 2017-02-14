@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ShowCard from './ShowCard';
 import './Portfolio.css';
 import works from './works';
-import { Modal, OverlayTrigger, popover, tooltip, Button } from 'react-bootstrap';
+import { Modal, OverlayTrigger, Button } from 'react-bootstrap';
 
 class ImageList extends React.Component {
   constructor(props) {
