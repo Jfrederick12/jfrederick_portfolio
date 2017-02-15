@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Banner from './components/Banner';
 import Contact from './pages/Contact/Contact';
-import Home from './pages/Home/Home';
+import About from './pages/Home/About';
 import Navigation from './Navigation';
 import Portfolio from './pages/Portfolio/Portfolio'
 import './App.css';
@@ -15,7 +15,7 @@ class App extends Component {
           <main>
             {this.props.children}
             < Portfolio />
-            < Home />
+            < About />
             < Contact />
           </main>
       </div>

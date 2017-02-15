@@ -1,6 +1,32 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
 .contact-style {
   margin-top: -20px;
   width: 100%;
   height: 100vh;
   background-color: #dddfd4;
+}
+
+.contact-tray-container {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  color: white;
+  background-color: #3fb0ac;
+}
+
+.skill-tray {
+  height: 0px;
+  background-color: #3fb0ac;
+  max-height: 100vh;
+  /*overflow-y: scroll;*/
+}
+
+.contact-row-container {
+  height: 100vh;
+  background-color: #3fb0ac;
+}
+
+.contact-info {
+  height: 100vh;
+  background-color: #3fb0ac;
 }
