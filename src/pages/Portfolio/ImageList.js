@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import ShowCard from './ShowCard';
 import './Portfolio.css';
 import works from './works';
-import { Modal, OverlayTrigger, Button } from 'react-bootstrap';
+import { Modal, Button } from 'react-bootstrap';
 
-class ImageList extends React.Component {
+class ImageList extends Component {
   constructor(props) {
     super(props);
     this.selectedWork = {id: null}
@@ -16,7 +16,6 @@ class ImageList extends React.Component {
       showModal: false
     }
     this.close = this.close.bind(this);
-    console.log(this.state);
     this.count = 0
   }
 
@@ -29,7 +28,6 @@ class ImageList extends React.Component {
 
   open() {
     this.setState({ showModal: true });
-    console.log(this.state)
   }
 
   selectWork(id, name, img, description){
@@ -44,7 +42,7 @@ class ImageList extends React.Component {
 
   render() {
     return (
-      <div className="column" >
+      <div className="gallery" >
         {works.map((work) => (
           <div key={work.id} onClick={this.selectWork.bind(this, work.id, work.name, work.img, work.description )}>
             <ShowCard {...work} />
@@ -57,7 +55,7 @@ class ImageList extends React.Component {
           <Modal.Header closeButton onClick={this.close}>
           </Modal.Header>
           <Modal.Body>
-            <p><img src={this.state.img} width="100%" /></p>
+            <p><img src={this.state.img} alt={this.state.name} width="100%" /></p>
             <h4>{this.state.name}</h4>
             <hr />
             <p>{this.state.description}</p>
@@ -71,7 +69,5 @@ class ImageList extends React.Component {
     );
   }
 };
-
-console.log(works[0].description)
 
 export default ImageList;
