@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Skills.css';
 
 const SkillBar = (props) => (
-  <div>
+  <div className="skill-bar">
     <ul>
       <li>
         <div id={props.proficiency}>

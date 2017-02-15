@@ -76,6 +76,10 @@ li {
   color: white;
 }
 
+.skill-bar {
+  padding-left: 35px;
+}
+
 #image-header {
   display: block;
   position: relative;

@@ -7,7 +7,7 @@ import './Contact.css';
 class Contact extends Component {
  render() {
    return (
-    <div>
+    <div id="contact">
       <Grid fluid className="no-gutters-right">
         <Row className="contact-row-container">
           <Col className="contact-tray-container" sm={6} md={6}>
