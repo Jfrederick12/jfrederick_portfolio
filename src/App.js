@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Banner from './components/Banner';
+import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
 import Navigation from './Navigation';
 import Portfolio from './pages/Portfolio/Portfolio'
@@ -13,6 +14,9 @@ class App extends Component {
         <Banner />
           <main>
             {this.props.children}
+            < Portfolio />
+            < Home />
+            < Contact />
           </main>
       </div>
     );
