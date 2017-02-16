@@ -64,10 +64,11 @@ h1 {
   max-height:300px;
 }*/
 
-li {
+.skill-bar li {
   margin-top: 10px;
   margin-left: -40px;
   list-style-type: none;
+  background-color: #DCDED2;
 }
 
 .about-tray-container {
