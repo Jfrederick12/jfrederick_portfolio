@@ -2,7 +2,7 @@ import React from 'react';
 
 const ShowCard = (props) => (
   <figure>
-    <span>{props.name}</span>
+    <span className="shadow">{props.name}</span>
     <img src={props.thumbnail} alt={props.name} height="225px" width="800px" />
   </figure>
 )
