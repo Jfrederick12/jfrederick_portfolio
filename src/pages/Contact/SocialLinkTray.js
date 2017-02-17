@@ -15,9 +15,7 @@ class SocialLinkTray extends Component {
     return(
       <div className="footer-social-icons">
         {socials.map((social) => (
-          <ul key={social.name} className="social-icons">
-            < SocialLinks {...social} />
-          </ul>
+          <nav key={social.name}>< SocialLinks {...social} /></nav>
         ))}
       </div>
     )

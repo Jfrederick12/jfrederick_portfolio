@@ -6,7 +6,7 @@ const SkillBar = (props) => (
     <ul>
       <li>
         <div id={props.proficiency}>
-          <p className="skill-area">{props.name}</p>
+          <p className="skill-area">{props.name} &nbsp; {props.percent}</p>
         </div>
       </li>
     </ul>

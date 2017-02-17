@@ -30,8 +30,8 @@ class ImageList extends Component {
     this.setState({ showModal: true });
   }
 
-  selectWork(id, name, img, description){
-    this.selectedWork = {id: id, name: name, img: img, description: description, showModal: true}
+  selectWork(id, name, img, description, involvement, tech){
+    this.selectedWork = {id: id, name: name, img: img, description: description, involvement: involvement, tech: tech, showModal: true}
     this.state = this.selectedWork
 
     this.setState({
@@ -44,7 +44,7 @@ class ImageList extends Component {
     return (
       <div className="gallery" >
         {works.map((work) => (
-          <div key={work.id} onClick={this.selectWork.bind(this, work.id, work.name, work.img, work.description )}>
+          <div key={work.id} onClick={this.selectWork.bind(this, work.id, work.name, work.img, work.description, work.involvement, work.tech )}>
             <ShowCard {...work} />
           </div>
         ))}
@@ -58,7 +58,9 @@ class ImageList extends Component {
             <p><img src={this.state.img} alt={this.state.name} width="100%" /></p>
             <h4>{this.state.name}</h4>
             <hr />
-            <p>{this.state.description}</p>
+              <p>{this.state.description}</p>
+              <p>{this.state.tech}</p>
+              <p>{this.state.involvement}</p>
           </Modal.Body>
           <Modal.Footer>
             <Button onClick={this.close}>Close</Button>

@@ -14,8 +14,16 @@
   background-color: #3fb0ac;
 }
 
-.about-container {
-  margin-top: 20px;
+.contact-container {
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 30px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.contact-container p:nth-child(n+2) {
+  color: white;
+  padding-right: 10%;
 }
 
 .social-container {
@@ -42,28 +50,23 @@
 
 /* Social Media Links*/
 
-
-ul {
-    padding:0;
-    list-style: none;
-}
 .footer-social-icons {
-    width: 200%;
-    display: inline-block;
+    padding-top: 10px;
+    text-align: center;
+    /*width: 100%;*/
     margin: 0 auto;
 }
 
-ul.social-icons {
-    margin-top: 10px;
+.footer-social-icons nav {
+  text-align: center;
+  display: inline-block;
 }
-.social-icons li {
-    float: left;
-    padding-right: 50px;
-}
-.social-icons a {
+
+.footer-social-icons a {
     color: white;
     text-decoration: none;
 }
+
 .fa-behance {
     padding:10px 14px;
     -o-transition:.5s;
@@ -73,9 +76,11 @@ ul.social-icons {
     transition: .5s;
     background-color: #3fb0ac;
 }
+
 .fa-behance:hover {
     background-color: #dddfd4;
 }
+
 .fa-dribbble {
     padding:10px 12px;
     -o-transition:.5s;
@@ -85,9 +90,11 @@ ul.social-icons {
     transition: .5s;
     background-color: #3fb0ac;
 }
+
 .fa-dribbble:hover {
     background-color: #dddfd4;
 }
+
 .fa-instagram {
     padding:10px 14px;
     -o-transition:.5s;
@@ -97,9 +104,11 @@ ul.social-icons {
     transition: .5s;
     background-color: #3fb0ac;
 }
+
 .fa-instagram:hover {
     background-color: #dddfd4;
 }
+
 .fa-github {
     padding:10px 14px;
     -o-transition:.5s;
@@ -109,9 +118,11 @@ ul.social-icons {
     transition: .5s;
     background-color: #3fb0ac;
 }
+
 .fa-github:hover {
     background-color: #dddfd4;
 }
+
 .fa-linkedin {
     padding:10px 14px;
     -o-transition:.5s;
@@ -121,6 +132,7 @@ ul.social-icons {
     transition: .5s;
     background-color: #3fb0ac;
 }
+
 .fa-linkedin:hover {
     background-color: #dddfd4;
 }

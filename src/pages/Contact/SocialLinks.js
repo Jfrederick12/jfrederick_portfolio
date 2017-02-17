@@ -2,9 +2,7 @@ import React from 'react';
 import './Contact.css';
 
 const SocialLinks = (props) => (
-  <li>
     <a href={props.link} className="social-icon"> <i className={props.img}></i></a>
-  </li>
 )
 
 const { string } = React.PropTypes
