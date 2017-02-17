@@ -10,8 +10,10 @@ const contactDetails = {
 class ContactInfo extends Component {
   render() {
     return(
-      <div className="about-container">
-        <h4>{contactDetails.thanks}</h4>
+      <div className="contact-container">
+        <p>{contactDetails.thanks}</p>
+        <p id="phone">{contactDetails.phone}</p>
+        <p id="email">{contactDetails.email}</p>
       </div>
     )
   }

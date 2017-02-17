@@ -14,8 +14,16 @@
   background-color: #3fb0ac;
 }
 
-.about-container {
-  margin-top: 20px;
+.contact-container {
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 30px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.contact-container p:nth-child(n+2) {
+  color: white;
+  padding-right: 10%;
 }
 
 .social-container {
