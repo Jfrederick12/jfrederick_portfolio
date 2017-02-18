@@ -79,6 +79,14 @@
   width: 100%;
 }
 
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    /* iphone portrait */
+    .banner {
+       background: url(../public/coverportrait2.jpg) 17% no-repeat;
+       background-size: cover;
+    }
+}
+
 #title-name {
   color: white;
 }

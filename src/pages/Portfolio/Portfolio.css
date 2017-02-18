@@ -80,7 +80,7 @@ p {
   color: white;
 }
 
-@media screen and (min-width: 321px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 600px) {
     /* iphone portrait */
     .tray-container-main {
         max-height: 700px;
