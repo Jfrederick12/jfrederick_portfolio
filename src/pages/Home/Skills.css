@@ -21,15 +21,24 @@ h1 {
 }
 
 .skill-tray {
-  height: 0px;
+  min-height: 835px;
+  height: 1200px;
   background-color: #fae596;
   /*max-height: 100vh;*/
   /*overflow-y: scroll;*/
 }
 
+
 .row-container {
-  height: 900px;
+  height: 850px;
   background-color: #fae596;
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    /* iphone portrait */
+    .row-container {
+      height: 1650px;
+    }
 }
 
 .skill-type {
