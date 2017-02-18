@@ -93,16 +93,22 @@
   color: #e9ece5;
 }*/
 
-div.banner #subtitle {
-  font-family: 'Quicksand', sans-serif;
-  padding-top: 150px;
-  width: 230px;
-  text-align: center;
+li {
+  list-style: none;
+}
 
+div.banner #subtitle {
+  list-style: none;
+  font-family: 'Quicksand', sans-serif;
+  width: 250px;
+  text-align: center;
+  margin-left: 10px;
+  padding: 10px;
   color: white;
 }
 
 div.banner #title {
+  list-style: none;
   font-family: 'Montserrat', sans-serif;
   font-size: 26px;
   padding: 10px;
