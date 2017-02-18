@@ -82,7 +82,7 @@
   color: white;
 }
 
-div.banner #title {
+/*div.banner {
   font-family: 'Montserrat', sans-serif;
   font-size: 26px;
   display: block;
@@ -91,12 +91,23 @@ div.banner #title {
   padding: 10px;
   background: #3b3a36;
   color: #e9ece5;
-}
+}*/
 
 div.banner #subtitle {
   font-family: 'Quicksand', sans-serif;
   padding-top: 150px;
   width: 230px;
+  text-align: center;
+
+  color: white;
+}
+
+div.banner #title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  padding: 10px;
+  background: #3b3a36;
+  color: #e9ece5;
   text-align: center;
 
   color: white;

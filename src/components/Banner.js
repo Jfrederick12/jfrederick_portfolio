@@ -10,11 +10,13 @@ class Banner extends Component {
   render() {
     return (
       <div className="banner shadow">
-        <p id="title"className="shadow">JUSTIN FREDERICK</p>
-        <p id="subtitle">Web Developer, Graphic Designer & Illustrator</p>
+        <p className="shadow" id="title">JUSTIN FREDERICK</p>
       </div>
     );
   }
 }
 
 export default Banner;
+
+       // <p id="title"className="shadow">JUSTIN FREDERICK</p>
+       //  <p id="subtitle">Web Developer, Graphic Designer & Illustrator</p>
