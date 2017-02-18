@@ -67,11 +67,10 @@
 .banner {
   background: url(../public/coverportrait2.jpg) no-repeat;
   background-size: cover;
-/*  background: url(/public/coverportrait2.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;*/
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,35 +78,44 @@
   width: 100%;
 }
 
-@media screen and (min-width: 320px) and (max-width: 600px) {
-    /* iphone portrait */
-    .banner {
-       background: url(../public/coverportrait2.jpg) 17% no-repeat;
-       background-size: cover;
-    }
-}
-
 #title-name {
   color: white;
 }
 
-div.banner h1 {
+div.banner #title {
   font-family: 'Montserrat', sans-serif;
   font-size: 26px;
   display: block;
   position: absolute;
+  vertical-align: center;
   padding: 10px;
   background: #3b3a36;
   color: #e9ece5;
 }
 
-div.banner p {
+div.banner #subtitle {
   font-family: 'Quicksand', sans-serif;
   padding-top: 150px;
   width: 230px;
   text-align: center;
 
   color: white;
+}
+
+@media screen and (min-width: 375px) and (max-width: 667px) {
+    /* iphone portrait */
+    .banner {
+       background: url(../public/coverportrait2.jpg) 17% no-repeat;
+       background-size: cover;
+    }
+
+    div.banner h1 {
+      vertical-align: center;
+    }
+
+    div.banner p {
+      vertical-align: center;
+    }
 }
 
 aside.primary-aside {
