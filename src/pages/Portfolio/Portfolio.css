@@ -67,12 +67,25 @@ p {
   visibility:visible;
 }*/
 
-.work-tray-container {
+
+.tray-container-main {
+  /*min-height: 3500px;*/
+  height: 3550px;
+/*  max-height: 3550px;*/
+}
+
+.tray-container-main div {
   font-family: 'Quicksand', sans-serif;
   text-align: center;
   color: white;
 }
 
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* iphone portrait */
+    .tray-container-main {
+        max-height: 700px;
+    }
+}
 
 /*.column {
   max-width: 600px;
