@@ -97,21 +97,21 @@ li {
   list-style: none;
 }
 
-div.banner #subtitle {
-  list-style: none;
+.subtitle {
+  font-size: 18px;
   font-family: 'Quicksand', sans-serif;
-  width: 250px;
+  width: 300px;
   text-align: center;
-  margin-left: 10px;
+  margin-left: -25px;
   padding: 10px;
   color: white;
 }
 
 div.banner #title {
-  list-style: none;
   font-family: 'Montserrat', sans-serif;
   font-size: 26px;
   padding: 10px;
+  margin-left: -30px;
   background: #3b3a36;
   color: #e9ece5;
   text-align: center;
@@ -126,8 +126,8 @@ div.banner #title {
        background-size: cover;
     }
 
-    div.banner h1 {
-      vertical-align: center;
+    div.banner #title {
+        margin-top: 100px;
     }
 
     div.banner p {
