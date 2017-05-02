@@ -12,6 +12,7 @@ class ImageList extends Component {
       id: this.selectedWork.id,
       name: this.selectedWork.name,
       img: this.selectedWork.img,
+      link: this.selectedWork.link,
       description: this.selectedWork.description,
       showModal: false
     }
@@ -30,8 +31,8 @@ class ImageList extends Component {
     this.setState({ showModal: true });
   }
 
-  selectWork(id, name, img, description, involvement, tech){
-    this.selectedWork = {id: id, name: name, img: img, description: description, involvement: involvement, tech: tech, showModal: true}
+  selectWork(id, name, img, description, involvement, link, tech){
+    this.selectedWork = {id: id, name: name, img: img, description: description, involvement: involvement, link: link, tech: tech, showModal: true}
     this.state = this.selectedWork
 
     this.setState({
@@ -44,7 +45,7 @@ class ImageList extends Component {
     return (
       <div className="gallery" >
         {works.map((work) => (
-          <div key={work.id} onClick={this.selectWork.bind(this, work.id, work.name, work.img, work.description, work.involvement, work.tech )}>
+          <div key={work.id} onClick={this.selectWork.bind(this, work.id, work.name, work.img, work.description, work.involvement, work.link, work.tech )}>
             <ShowCard {...work} />
           </div>
         ))}
@@ -61,6 +62,7 @@ class ImageList extends Component {
               <p>{this.state.description}</p>
               <p>{this.state.tech}</p>
               <p>{this.state.involvement}</p>
+              <a href={this.state.link}>{this.state.link}</a>
           </Modal.Body>
           <Modal.Footer>
             <Button onClick={this.close}>Close</Button>

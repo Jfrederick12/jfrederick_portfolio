@@ -35,7 +35,17 @@ const skills = [
     percent: '100%'
   },
   {
-    name: 'SQL',
+    name: 'Ajax',
+    proficiency: 'Skill-100',
+    percent: '100%'
+  },
+  {
+    name: 'ReactJS',
+    proficiency: 'Skill-90',
+    percent: '90%'
+  },
+  {
+    name: 'NodeJS',
     proficiency: 'Skill-90',
     percent: '90%'
   },
@@ -45,29 +55,19 @@ const skills = [
     percent: '90%'
   },
   {
+    name: 'SQL',
+    proficiency: 'Skill-90',
+    percent: '90%'
+  },
+  {
     name: 'jQuery',
     proficiency: 'Skill-80',
     percent: '80%'
   },
   {
-    name: 'Ajax',
-    proficiency: 'Skill-80',
-    percent: '80%'
-  },
-  {
-    name: 'ReactJS',
-    proficiency: 'Skill-80',
-    percent: '80%'
-  },
-  {
-    name: 'NodeJS',
+    name: 'AngularJS',
     proficiency: 'Skill-70',
     percent: '70%'
-  },
-  {
-    name: 'AngularJS',
-    proficiency: 'Skill-60',
-    percent: '60%'
   },
   {
     name: 'Ionic',

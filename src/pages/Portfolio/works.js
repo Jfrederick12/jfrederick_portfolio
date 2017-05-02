@@ -1,4 +1,12 @@
 const works = [
+      { id: 13,
+        name: 'ReactJS Contact App',
+        img: 'https://github.com/Jfrederick12/React_Web_Portfolio/blob/master/public/images/contactomatic.jpg?raw=true',
+        thumbnail: 'https://github.com/Jfrederick12/React_Web_Portfolio/blob/master/public/images/contactomatic.jpg?raw=true',
+        description: 'Practical web application built using ReactJS & NodeJS to demonstrate a contact list that handles filtering, arranging by sort type, folder and search filter. All of the data is pulled from a JSON list and passed through React Components handling the state of the objects.',
+        tech: 'ReactJS, NodeJS',
+        link: 'https://react-contact-filter.herokuapp.com/'
+      },
       { id: 12,
         name: "Seatd Mobile App",
         img: "https://github.com/Jfrederick12/React_Web_Portfolio/blob/master/public/images/seatd.jpg?raw=true",
@@ -6,7 +14,7 @@ const works = [
         description: "Client & business facing mobile app.",
         involvement: "Focused on building out the functionality with AngularJS as well as the UI/UX. Worked on algorithms for the search feature that allows users to find businesses by location and service type.",
         tech: "Angular, Ionic, Rails, SQL and Google Maps API.",
-        link: "link goes here",
+        link: "https://github.com/Jfrederick12/seatd",
         linkImg: ""
       },
       { id: 1,
