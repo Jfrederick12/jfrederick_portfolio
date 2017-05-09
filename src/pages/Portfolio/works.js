@@ -7,6 +7,14 @@ const works = [
         tech: 'ReactJS, NodeJS',
         link: 'https://react-contact-filter.herokuapp.com/'
       },
+      { id: 14,
+        name: 'ReactJS Fundraiser App',
+        img: 'https://github.com/Jfrederick12/React_Web_Portfolio/blob/master/public/images/react-fundraiser.jpg?raw=true',
+        thumbnail: 'https://github.com/Jfrederick12/React_Web_Portfolio/blob/master/public/images/react-fundraiser.jpg?raw=true',
+        description: 'Mock fundraiser web application built using ReactJS & NodeJS.',
+        tech: 'ReactJS, NodeJS',
+        link: 'https://react-fundraiser.herokuapp.com/'
+      },      
       { id: 12,
         name: "Seatd Mobile App",
         img: "https://github.com/Jfrederick12/React_Web_Portfolio/blob/master/public/images/seatd.jpg?raw=true",
