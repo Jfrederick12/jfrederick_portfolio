@@ -1,8 +1,8 @@
 const works = [
       { id: 15,
         name: 'Dental Laser Training',
-        img: 'https://github.com/Jfrederick12/React_Web_Portfolio/blob/master/public/images/contactomatic.jpg?raw=true',
-        thumbnail: 'https://github.com/Jfrederick12/React_Web_Portfolio/blob/master/public/images/contactomatic.jpg?raw=true',
+        img: 'https://github.com/Jfrederick12/jfrederick_portfolio/blob/master/public/images/dentallasers.jpg?raw=true',
+        thumbnail: 'https://github.com/Jfrederick12/jfrederick_portfolio/blob/master/public/images/dentallasers.jpg?raw=true',
         description: 'Client project for an online web store to sell clients Dental Laser Videos. Wireframed using Sketch, and built the project using ReactJS, Ruby on Rails and Stripe Payments.',
         link: 'https://dentallaservideos.herokuapp.com/'
       },
