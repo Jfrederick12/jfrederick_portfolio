@@ -1,10 +1,11 @@
 import React from 'react';
 
 const ShowCard = (props) => (
-  <figure>
-    <span className="shadow">{props.name}</span>
-    <img src={props.thumbnail} alt={props.name} height="225px" width="800px" />
-  </figure>
+  <div className="work-image" style={{backgroundImage: `url(${props.img})`}}>
+  	<div>
+  	  <h2>{props.name}</h2>
+    </div>
+  </div>
 )
 
 const { string } = React.PropTypes
@@ -16,3 +17,8 @@ ShowCard.propTypes = {
 }
 
 export default ShowCard;
+
+  // <figure>
+  //   <span className="shadow">{props.name}</span>
+  //   <img src={props.thumbnail} alt={props.name} height="225px" width="800px" />
+  // </figure>

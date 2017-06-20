@@ -87,35 +87,7 @@ p {
     }
 }
 
-/*.column {
-  max-width: 600px;
-  min-width: 600px;
-  height: 100vh;
-  margin: 15px 15px 0;
-  padding: 0;
-}
-
-.column:last-child {
-  padding-bottom: 20px;
-}
-
-.column::after {
-  clear: both;
-  display: block;
-}
-
-.column div {
-  float: left;
-  width: 300px;
-  height: 200px;
-  margin: 0 0 0 0px;
-}
-
-.column div:first-child {
-  margin-left: 0;
-}*/
-
-.gallery div figure img {
+/*.gallery div figure img {
   -webkit-transform: scale(1);
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
@@ -128,48 +100,78 @@ p {
   filter: grayscale(100%);
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
-}
-
-.gallery li {
-
-}
-
-/*figure span {
-  position: absolute;
-  bottom: -20px;
-  left: 0;
-  z-index: -1;
-  display: block;
-  width: 300px;
-  margin: 0;
-  padding: 0;
-  color: #444;
-  font-size: 18px;
-  text-decoration: none;
-  text-align: center;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-  opacity: 1;
 }*/
 
-figure span {
+.work-image {
+  background-size: cover;
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 300px;
+  min-height: 300px;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;  
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-image:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  overflow: hidden;
+}
+
+.work-image h2 {
+  align-self: flex-start;
+  position: absolute;
+  width: 100%;
+  margin-top: -10px;
+  padding-top: 20%;
+  height: 320px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  opacity: 0;
+  background: transparent;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;   
+}
+
+.work-image h2:hover {
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out; 
+  opacity: 1;
+}
+
+.work-image div {
+  color: black;
+}
+.work-image div h2:hover {
+  background-color: white;
+  width: 100%;
+  opacity: 0.6;
+}
+/*figure span {
   width: 100%;
   font-family: 'Montserrat', sans-serif;
   padding-top: 20%;
   font-weight: bold;
-  position: absolute;
+  position: relative;
   text-align: center;
-  z-index: 1;
   opacity: 1;
   color: #fae596;
   font-size: 25px;
   padding-left: 10px;
-  /*background: white;*/
+  background: white;
   height: 100%;
   opacity: 0;
-}
+}*/
 
-figure span:hover {
+/*figure span:hover {
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
   opacity: 1;
@@ -196,4 +198,4 @@ figure:hover+span {
 .image-title {
   position: absolute;
   font-size: 22px;
-}
+}*/
