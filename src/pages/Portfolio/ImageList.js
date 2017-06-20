@@ -2,73 +2,84 @@ import React, { Component } from 'react';
 import ShowCard from './ShowCard';
 import './Portfolio.css';
 import works from './works';
+import CurrentWork from './CurrentWork';
 import { Modal, Button } from 'react-bootstrap';
+import SlidingPane from 'react-sliding-pane';
+import ScrollLock from 'react-scrolllock';
+import MediaQuery from 'react-responsive';
+import 'react-sliding-pane/dist/react-sliding-pane.css';
 
 class ImageList extends Component {
   constructor(props) {
     super(props);
     this.selectedWork = {id: null}
     this.state =  {
-      id: this.selectedWork.id,
-      name: this.selectedWork.name,
-      img: this.selectedWork.img,
-      link: this.selectedWork.link,
-      description: this.selectedWork.description,
-      showModal: false
+      selectedWork: '',
+      isPaneOpen: false,
+      isPaneOpenLeft: false
     }
-    this.close = this.close.bind(this);
+    this.selectWork = this.selectWork.bind(this);
     this.count = 0
   }
 
-  close() {
+  selectWork(work) {
     this.setState({
+      selectedWork: work,
       id: this.state.id,
-      showModal: false
-    });
-  }
-
-  open() {
-    this.setState({ showModal: true });
-  }
-
-  selectWork(id, name, img, description, involvement, link, tech){
-    this.selectedWork = {id: id, name: name, img: img, description: description, involvement: involvement, link: link, tech: tech, showModal: true}
-    this.state = this.selectedWork
-
-    this.setState({
-      id: this.state.id,
-      showModal: true
+      isPaneOpenLeft: true
     });
   }
 
   render() {
+    console.log(this.state.display)
     return (
       <div className="gallery" >
         {works.map((work) => (
-          <div key={work.id} onClick={this.selectWork.bind(this, work.id, work.name, work.img, work.description, work.involvement, work.link, work.tech )}>
+          <div key={work.id} onClick={() => this.selectWork(work)}>
             <ShowCard {...work} />
           </div>
         ))}
+        <MediaQuery query='(min-device-width: 1224px)'>
+          <SlidingPane
+            isOpen={ this.state.isPaneOpenLeft }
+            title={this.state.selectedWork.name}
+            from='right'
+            width='50%'
+            onRequestClose={ () => this.setState({ isPaneOpenLeft: false }) }>
+            <div>
+              <p><img src={this.state.selectedWork.img} alt={this.state.selectedWork.name} width="100%" /></p>
+              <div className="work-content">
+                <h4>{this.state.selectedWork.name}</h4>
+                <p>{this.state.selectedWork.description}</p>
+                <p>{this.state.selectedWork.tech}</p>
+                <p>{this.state.selectedWork.involvement}</p>
+                <a href={this.state.selectedWork.link}>{this.state.selectedWork.link}</a>
+              </div>
+            </div>
+            <ScrollLock />
+          </SlidingPane>
+        </MediaQuery>
 
-        {/* need to move Modal into it's own component and pass state through as props */}
-
-        <Modal className='work-modal' show={this.state.showModal} onHide={this.close}>
-          <Modal.Header closeButton onClick={this.close}>
-          </Modal.Header>
-          <Modal.Body>
-            <p><img src={this.state.img} alt={this.state.name} width="100%" /></p>
-            <h4>{this.state.name}</h4>
-            <hr />
-              <p>{this.state.description}</p>
-              <p>{this.state.tech}</p>
-              <p>{this.state.involvement}</p>
-              <a href={this.state.link}>{this.state.link}</a>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button onClick={this.close}>Close</Button>
-          </Modal.Footer>
-        </Modal>
-
+        <MediaQuery query='(max-device-width: 750px)'>
+          <SlidingPane
+            isOpen={ this.state.isPaneOpenLeft }
+            title={this.state.selectedWork.name}
+            from='right'
+            width='100%'
+            onRequestClose={ () => this.setState({ isPaneOpenLeft: false }) }>
+            <div>
+              <p><img src={this.state.selectedWork.img} alt={this.state.selectedWork.name} width="100%" /></p>
+              <div className="work-content">
+                <h4>{this.state.selectedWork.name}</h4>
+                <p>{this.state.selectedWork.description}</p>
+                <p>{this.state.selectedWork.tech}</p>
+                <p>{this.state.selectedWork.involvement}</p>
+                <a href={this.state.selectedWork.link}>{this.state.selectedWork.link}</a>
+              </div>
+            </div>
+            <ScrollLock />
+          </SlidingPane>
+        </MediaQuery>        
       </div>
     );
   }

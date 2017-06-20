@@ -159,7 +159,7 @@ figure span {
   font-weight: bold;
   position: absolute;
   text-align: center;
-  z-index: 1000;
+  z-index: 1;
   opacity: 1;
   color: #fae596;
   font-size: 25px;
