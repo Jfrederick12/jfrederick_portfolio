@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ShowCard = (props) => (
-  <div className="work-image" style={{backgroundImage: `url(${props.img})`}}>
+  <div className="work-image" style={{backgroundImage: `url(${props.thumbnail})`}}>
   	<div>
   	  <h2>{props.name}</h2>
     </div>
